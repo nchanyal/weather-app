@@ -5,18 +5,122 @@
   --foreground: #171717;
 }
 
+.text-preset-1 {
+  @apply text-neutral-900 font-dm-sans font-semibold italic text-8xl leading-[100%] tracking-[-2px];
+}
+
+.text-preset-2 {
+  @apply text-neutral-900 font-bricolage font-bold text-[3.5rem] leading-[120%] tracking-[0px];
+}
+
+.text-preset-3 {
+  @apply text-neutral-900 font-dm-sans font-light text-[2rem] leading-[100%] tracking-[0px];
+}
+
+.text-preset-4 {
+  @apply text-neutral-900 font-dm-sans font-bold text-[1.75rem] leading-[120%] tracking-[0px];
+}
+
+.text-preset-5 {
+  @apply text-neutral-900 font-dm-sans font-semibold text-xl leading-[120%] tracking-[0px];
+}
+
+.text-preset-5-medium {
+  @apply text-neutral-900 font-dm-sans font-medium text-xl leading-[120%] tracking-[0px];
+}
+
+.text-preset-6 {
+  @apply text-neutral-900 font-dm-sans font-medium text-lg leading-[120%] tracking-[0px];
+}
+
+.text-preset-7 {
+  @apply text-neutral-900 font-dm-sans font-medium text-base leading-[120%] tracking-[0px];
+}
+
+.text-preset-8 {
+  @apply text-neutral-900 font-dm-sans font-medium text-sm leading-[120%] tracking-[0px];
+}
+
+.radius-0 {
+  @apply rounded-none;
+}
+
+.radius-4 {
+  @apply rounded;
+}
+
+.radius-6 {
+  @apply rounded-md;
+}
+
+.radius-8 {
+  @apply rounded-lg;
+}
+
+.radius-10 {
+  @apply rounded-[0.625rem];
+}
+
+.radius-12 {
+  @apply rounded-xl;
+}
+
+.radius-16 {
+  @apply rounded-2xl;
+}
+
+.radius-20 {
+  @apply rounded-[1.25rem];
+}
+
+.radius-24 {
+  @apply rounded-3xl;
+}
+
+.radius-full {
+  @apply rounded-full;
+}
+
+@theme {
+  --color-neutral-0: oklch(1 0 0);
+  --color-neutral-200: oklch(0.8694 0.0082 293.89);
+  --color-neutral-300: oklch(0.7478 0.0156 286.02);
+  --color-neutral-600: oklch(0.3696 0.0596 284.39);
+  --color-neutral-700: oklch(0.319 0.0477 285.05);
+  --color-neutral-800: oklch(0.2793 0.0492 284.43);
+  --color-neutral-900: oklch(0.1391 0.0873 268.83);
+
+  --color-orange-500: oklch(0.7351 0.1836 53.37);
+
+  --color-blue-500: oklch(0.524 0.1968 271.71);
+  --color-blue-700: oklch(0.354 0.1919 275.84);
+
+  --spacing-0: 0px;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1200: 96px;
+  --spacing-1400: 112px;
+  --spacing-1600: 128px;
+  --spacing-1800: 140px;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-dm-sans: var(--font-dm-sans);
+  --font-bricolage: var(--font-bricolage);
 }
 
 body {

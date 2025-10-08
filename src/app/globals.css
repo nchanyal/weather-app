@@ -6,39 +6,39 @@
 }
 
 .text-preset-1 {
-  @apply text-neutral-900 font-dm-sans font-semibold italic text-8xl leading-[100%] tracking-[-2px];
+  @apply font-dm-sans font-semibold italic text-8xl leading-[100%] tracking-[-2px];
 }
 
 .text-preset-2 {
-  @apply text-neutral-900 font-bricolage font-bold text-[3.5rem] leading-[120%] tracking-[0px];
+  @apply font-bricolage font-bold text-[3.25rem] leading-[120%] tracking-[0px];
 }
 
 .text-preset-3 {
-  @apply text-neutral-900 font-dm-sans font-light text-[2rem] leading-[100%] tracking-[0px];
+  @apply font-dm-sans font-light text-[2rem] leading-[100%] tracking-[0px];
 }
 
 .text-preset-4 {
-  @apply text-neutral-900 font-dm-sans font-bold text-[1.75rem] leading-[120%] tracking-[0px];
+  @apply font-dm-sans font-bold text-[1.75rem] leading-[120%] tracking-[0px];
 }
 
 .text-preset-5 {
-  @apply text-neutral-900 font-dm-sans font-semibold text-xl leading-[120%] tracking-[0px];
+  @apply font-dm-sans font-semibold text-xl leading-[120%] tracking-[0px];
 }
 
 .text-preset-5-medium {
-  @apply text-neutral-900 font-dm-sans font-medium text-xl leading-[120%] tracking-[0px];
+  @apply font-dm-sans font-medium text-xl leading-[120%] tracking-[0px];
 }
 
 .text-preset-6 {
-  @apply text-neutral-900 font-dm-sans font-medium text-lg leading-[120%] tracking-[0px];
+  @apply font-dm-sans font-medium text-lg leading-[120%] tracking-[0px];
 }
 
 .text-preset-7 {
-  @apply text-neutral-900 font-dm-sans font-medium text-base leading-[120%] tracking-[0px];
+  @apply font-dm-sans font-medium text-base leading-[120%] tracking-[0px];
 }
 
 .text-preset-8 {
-  @apply text-neutral-900 font-dm-sans font-medium text-sm leading-[120%] tracking-[0px];
+  @apply font-dm-sans font-medium text-sm leading-[120%] tracking-[0px];
 }
 
 .radius-0 {

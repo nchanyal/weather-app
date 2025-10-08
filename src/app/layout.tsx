@@ -1,32 +1,19 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { DM_Sans, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-export const dmSans = localFont({
-  src: [
-    {
-      path: "../../public/fonts/DMSans-VariableFont_opsz,wght.ttf",
-      style: "normal",
-      weight: "100 900", // variable weight range
-    },
-    {
-      path: "../../public/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf",
-      style: "italic",
-      weight: "100 900",
-    },
-  ],
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
   variable: "--font-dm-sans",
   display: "swap",
 });
 
-export const bricolageGrotesque = localFont({
-  src: [
-    {
-      path: "../../public/fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf",
-      style: "normal",
-      weight: "100 900", // Bricolage Grotesque supports full weight axis
-    },
-  ],
+const bricolageGrotesque = Bricolage_Grotesque({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  style: ["normal"],
   variable: "--font-bricolage",
   display: "swap",
 });

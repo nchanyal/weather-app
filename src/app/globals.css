@@ -3,6 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+input::selection,
+textarea::selection {
+  background: var(--color-indigo-500);
+}
+
+/* For Firefox */
+input::-moz-selection,
+textarea::-moz-selection {
+  background: var(--color-indigo-500);
+}
+
 .text-preset-1 {
   @apply font-dm-sans font-semibold italic text-8xl leading-[100%] tracking-[-2px];
 }

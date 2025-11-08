@@ -16,7 +16,7 @@ export default function SearchBar() {
           <Input
             type="text"
             placeholder="Search for a place..."
-            className="bg-neutral-800 h-full border-0 radius-12 pl-15 placeholder:text-neutral-200 text-neutral-200 text-preset-5-medium"
+            className="bg-neutral-800 hover:bg-neutral-700 h-full border-0 radius-12 pl-15 placeholder:text-neutral-200 text-neutral-200 text-preset-5-medium"
           />
         </div>
         <Button className="h-full radius-12" />

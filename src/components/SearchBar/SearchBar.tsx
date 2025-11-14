@@ -20,7 +20,12 @@ export default function SearchBar() {
             focus-visible:ring-2 focus-visible:ring-neutral-200 focus-visible:ring-offset-3 focus-visible:ring-offset-neutral-900"
           />
         </div>
-        <Button className="h-full radius-12" />
+        <Button
+          className="h-full radius-12 bg-blue-500 hover:bg-blue-700 text-neutral-0 text-preset-5-medium border-0
+        focus:ring-2 focus:ring-blue-500 focus:ring-offset-3 focus:ring-offset-neutral-900"
+        >
+          Search
+        </Button>
       </div>
     </div>
   );

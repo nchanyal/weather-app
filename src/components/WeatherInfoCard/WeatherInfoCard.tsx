@@ -8,7 +8,7 @@ export default function WeatherInfoCard() {
     <div className="relative col-span-4 radius-20 overflow-hidden">
       <Image
         src={WeatherInfoBgLg}
-        alt="Dark, cloudy night background"
+        alt="Dark, cloudy night"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="relative z-10 h-full flex items-center justify-between py-20 px-6">

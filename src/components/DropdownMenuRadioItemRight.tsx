@@ -1,8 +1,7 @@
 import { cn } from "@/lib/utils";
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
-import { CircleIcon } from "lucide-react";
 import Image from "next/image";
-import checkmarkIconUrl from "../../public/normal-icons/icon-checkmark.svg";
+import checkmarkIconUrl from "@public/normal-icons/icon-checkmark.svg";
 
 export function DropdownMenuRadioItemRight({
   className,

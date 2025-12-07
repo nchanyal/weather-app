@@ -1,7 +1,7 @@
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import searchIcon from "../../../public/normal-icons/icon-search.svg";
+import searchIcon from "@public/normal-icons/icon-search.svg";
 
 export default function SearchBar() {
   return (

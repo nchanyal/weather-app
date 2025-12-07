@@ -1,7 +1,6 @@
 import Image from "next/image";
-import WeatherInfoBgLg from "../../../public/bg-today-large.svg";
-
-import SunSVG from "../../../public/weather-icons/Clear-sunny.svg";
+import WeatherInfoBgLg from "@public/bg-today-large.svg";
+import SunSVG from "@public/weather-icons/Clear-sunny.svg";
 
 export default function WeatherInfoCard() {
   return (

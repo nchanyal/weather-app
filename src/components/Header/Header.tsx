@@ -3,9 +3,9 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import logoUrl from "../../../public/logo.svg";
-import unitIconUrl from "../../../public/normal-icons/icon-units.svg";
-import dropdownIconUrl from "../../../public/normal-icons/icon-dropdown.svg";
+import logoUrl from "@public/logo.svg";
+import unitIconUrl from "@public/normal-icons/icon-units.svg";
+import dropdownIconUrl from "@public/normal-icons/icon-dropdown.svg";
 
 import { Button } from "@/components/ui/button";
 import {

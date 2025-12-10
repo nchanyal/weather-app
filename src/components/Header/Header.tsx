@@ -49,7 +49,7 @@ export default function Header() {
             sideOffset={8}
             className="flex flex-col shadow-custom bg-neutral-800 border-neutral-600 w-[13.375rem] max-w-[13.375rem] h-[25.75rem] max-h-[25.75rem] py-1.5 px-2 radius-12"
           >
-            <DropdownMenuItem className="text-preset-7-white h-[2.4375rem] max-h-[2.4375rem] mb-1">
+            <DropdownMenuItem className="text-preset-7-white radius-8 h-[2.4375rem] max-h-[2.4375rem] mb-1">
               Switch to Imperial
             </DropdownMenuItem>
             <DropdownMenuRadioSection

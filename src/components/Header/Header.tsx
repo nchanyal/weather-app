@@ -39,7 +39,7 @@ export default function Header() {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button className="bg-neutral-800 hover:bg-neutral-700 w-full h-full">
-              <Image src={unitIconUrl} alt="Unit Icon" />
+              <Image src={unitIconUrl} alt="" />
               <p className="text-preset-7">Units</p>
               <Image src={dropdownIconUrl} alt="" />
             </Button>

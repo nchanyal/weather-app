@@ -10,7 +10,7 @@ export default function SearchBar() {
         <div className="relative h-full">
           <Image
             src={searchIcon}
-            alt="Magnifying glass"
+            alt=""
             className="absolute left-6 top-1/2 -translate-y-1/2 text-neutral-200"
           />
           <Input

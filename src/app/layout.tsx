@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { WeatherProvider } from "@/Context/WeatherProvider";
 import { DM_Sans, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
@@ -34,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${bricolageGrotesque.variable} antialiased`}
       >
-        {children}
+        <WeatherProvider>{children}</WeatherProvider>
       </body>
     </html>
   );

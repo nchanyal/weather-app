@@ -27,7 +27,7 @@ describe("<Main />", () => {
         <Main />
       </WeatherProvider>
     );
-    expect(screen.getByText("Search")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /search/i })).toBeInTheDocument();
   });
 
   it("shows the loading state on the WeatherInfoCard after a location is entered and the 'Search' button is clicked", async () => {

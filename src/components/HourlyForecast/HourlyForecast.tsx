@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import { useState } from "react";
 import { hourlyForecasts } from "@/lib/HourlyForecasts";
+import { useWeather } from "@/hooks/useWeather";
 
 const days = [
   "Monday",
@@ -28,6 +29,8 @@ const days = [
 
 export default function HourlyForecast() {
   const [selectedDay, setSelectedDay] = useState("Monday");
+  const context = useWeather();
+  const { loading } = context;
 
   return (
     <div className="flex-grow p-6 grid grid-rows-[37px_592px] gap-4">
@@ -35,9 +38,12 @@ export default function HourlyForecast() {
         <p className="text-preset-5">Hourly forecast</p>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className="bg-neutral-600 hover:bg-neutral-600 w-[7.5rem] h-[2.3125rem] px-4 py-2">
+            <Button
+              className="bg-neutral-600 hover:bg-neutral-600 w-[7.5rem] h-[2.3125rem] px-4 py-2"
+              aria-label="days dropdown button"
+            >
               <p className="text-neutral-0 font-dm-sans font-medium text-base">
-                {selectedDay}
+                {loading ? "-" : selectedDay}
               </p>
               <Image src={dropdownIconUrl} alt="" />
             </Button>

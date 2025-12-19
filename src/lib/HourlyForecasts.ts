@@ -4,6 +4,6 @@ export const hourlyForecasts = Array.from({ length: 24 }, (_, i) => ({
   id: i,
   weather: "Cloudy",
   weatherSVG: CloudySVG,
-  time: "3 PM",
+  time: `${i} PM`,
   temperature: "20°",
 }));

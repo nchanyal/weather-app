@@ -30,7 +30,7 @@ describe("<Main />", () => {
     expect(screen.getByRole("button", { name: /search/i })).toBeInTheDocument();
   });
 
-  it("shows loading state across weather info, weather detail, and daily forecast after search", async () => {
+  it("shows loading state across components after search", async () => {
     render(
       <WeatherProvider>
         <Main />
@@ -54,6 +54,13 @@ describe("<Main />", () => {
       /mon forecast card/i,
     ];
 
+    const daysDropdownButton = screen.getByLabelText("days dropdown button");
+
+    const hourlyForecastLabels = Array.from(
+      { length: 24 },
+      (_, i) => `${i} pm forecast card`
+    );
+
     const searchField = screen.getByLabelText("Search for a place...");
     const searchButton = screen.getByRole("button", { name: /search/i });
 
@@ -71,6 +78,15 @@ describe("<Main />", () => {
 
     // DailyForecastCards loading state
     dailyForecastLabels.forEach((label) => {
+      const card = screen.getByLabelText(label);
+      expect(card).toBeEmptyDOMElement();
+    });
+
+    // Days dropdown button loading state
+    expect(within(daysDropdownButton).getByText("-")).toBeInTheDocument();
+
+    // HourlyForecastCards loading state
+    hourlyForecastLabels.forEach((label) => {
       const card = screen.getByLabelText(label);
       expect(card).toBeEmptyDOMElement();
     });

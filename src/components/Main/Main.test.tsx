@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Main from "./Main";
 import { WeatherProvider } from "@/Context/WeatherProvider";
@@ -30,12 +30,19 @@ describe("<Main />", () => {
     expect(screen.getByRole("button", { name: /search/i })).toBeInTheDocument();
   });
 
-  it("shows the loading state on the WeatherInfoCard after a location is entered and the 'Search' button is clicked", async () => {
+  it("shows loading state across weather info and detail cards after search", async () => {
     render(
       <WeatherProvider>
         <Main />
       </WeatherProvider>
     );
+
+    const cardLabels = [
+      /feels like card/i,
+      /humidity card/i,
+      /wind card/i,
+      /precipitation card/i,
+    ];
 
     const searchField = screen.getByLabelText("Search for a place...");
     const searchButton = screen.getByRole("button", { name: /search/i });
@@ -43,6 +50,13 @@ describe("<Main />", () => {
     await userEvent.type(searchField, "Los Angeles, California");
     await userEvent.click(searchButton);
 
+    // WeatherInfoCard loading state
     expect(screen.getByText("Loading...")).toBeInTheDocument();
+
+    // WeatherDetailCards loading state
+    cardLabels.forEach((label) => {
+      const card = screen.getByLabelText(label);
+      expect(within(card).getByText("-")).toBeInTheDocument();
+    });
   });
 });

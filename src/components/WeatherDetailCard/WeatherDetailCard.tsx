@@ -14,7 +14,6 @@ export default function WeatherDetailCard({
 
   return (
     <div
-      role="weather detail group"
       className="bg-neutral-800 radius-12 border border-neutral-600 p-5"
       aria-label={`${title.toLowerCase()} card`}
     >
